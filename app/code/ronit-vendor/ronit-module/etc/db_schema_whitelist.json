@@ -1,0 +1,18 @@
+{
+    "ronit-vendor_ronit-module": {
+        "column": {
+            "id": true,
+            "name": true,
+            "description": true,
+            "is_enabled": true,
+            "weighting_factor": true,
+            "current_at": true,
+            "updated_at": true,
+            "website_id": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "RONIT-VENDOR_RONIT-MODULE_WEBSITE_ID_STORE_WEBSITE_WEBSITE_ID": true
+        }
+    }
+}
