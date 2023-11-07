@@ -13,5 +13,8 @@
         </constraint>
         <column xsi:type="smallint" name="website_id" padding="5" unsigned="true" nullable="false" identity="false" />
         <constraint xsi:type="foreign" referenceId="RONIT-VENDOR_RONIT-MODULE_WEBSITE_ID_STORE_WEBSITE_WEBSITE_ID" column="website_id" referenceTable="store_website" referenceColumn="website_id" onDelete="CASCADE" />
+        <constraint xsi:type="unique" referenceId="RONIT-VENDOR_RONIT-MODULE_NAME">
+            <column name="name" />
+        </constraint>
     </table>
 </schema>
