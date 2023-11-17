@@ -16,10 +16,7 @@
     "autoload": {
         "files": [
             "registration.php"
-        ],
-        "psr-4": {
-            "ronit-vendor\\ronit-module\\": ""
-        }
+        ]
     }
 }
 
