@@ -33,7 +33,6 @@ class CreateDefaultBrands implements DataPatchInterface{
         }, $brands);
 
         $this->moduleDataSetup->getConnection()->insertMultiple('ronitVendor_ronitModule',$records);
-
         return $this;
 
     }
