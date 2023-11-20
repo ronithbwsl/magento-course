@@ -11,7 +11,7 @@ class Index implements ActionInterface{
         
     }
     public function execute(){
-        return $this->resultFactory->create()->setContents('example');
+        return $this->resultFactory->create()->setHeader("Content-Type","text/xml")->setContents("<root><subroot>Hi</subroot></root>");
     }
 }
 
