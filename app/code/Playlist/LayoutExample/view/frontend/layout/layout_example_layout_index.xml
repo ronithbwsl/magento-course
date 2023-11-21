@@ -4,9 +4,10 @@
             <title>Layout Example</title>
         </head>
         <body>
-        
         <referenceContainer name="content">
-            <block class="Playlist\LayoutExample\Block\Layout\Index" name="custom_block" template="Playlist_LayoutExample::content.phtml" />
+            <block class="Playlist\LayoutExample\Block\Layout\Index" name="custom_block" template="Playlist_LayoutExample::content.phtml">
+                <block name="layout_note" class="Playlist\LayoutExample\Block\Layout\Note" template="Playlist_LayoutExample::note.phtml"/>
+            </block>
         </referenceContainer>
         </body>
 </page>
