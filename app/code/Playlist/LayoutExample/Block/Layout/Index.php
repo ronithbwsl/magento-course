@@ -6,7 +6,6 @@ namespace Playlist\LayoutExample\Block\Layout;
 use Magento\Framework\View\Element\Template;
 
 class Index extends Template{
-     
     protected function _prepareLayout(){
         parent::_prepareLayout();
 
@@ -21,7 +20,10 @@ class Index extends Template{
     public function getSubtitles(){
         return "Learn Magento 2 Development";
     }
-}
 
+    public function getNodeHtmllll(): string{
+        return $this->getLayout()->createBlock(Note::class)->toHtml();
+    }
+}
 
 ?>
