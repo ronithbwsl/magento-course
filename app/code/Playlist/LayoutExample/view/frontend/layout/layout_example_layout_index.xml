@@ -7,7 +7,14 @@
         <referenceContainer name="content">
             <block class="Playlist\LayoutExample\Block\Layout\Index" name="custom_block" template="Playlist_LayoutExample::content.phtml">
                 <block name="layout_note" class="Playlist\LayoutExample\Block\Layout\Note" template="Playlist_LayoutExample::note.phtml"/>
+
+                <block name="cms_block_example" class="Magento\Cms\Block\Block">
+                    <arguments>
+                        <argument name="block_id" xsi:type="string">cms_block_example</argument>
+                    </arguments>
+                </block>
             </block>
+            
         </referenceContainer>
         </body>
 </page>
