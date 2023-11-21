@@ -4,14 +4,9 @@
             <title>Layout Example</title>
         </head>
         <body>
-        <referenceBlock name="page.main.title">
-            <action method="setPageTitle">
-                <argument name="page_title" xsi:type="string">Something else</argument>
-            </action>
-        </referenceBlock>
-        <!-- <referenceBlock name="page.main.title" remove="true"/> -->
+        
         <referenceContainer name="content">
-            <block class="Magento\Framework\View\Element\Template" name="custom_block" template="Playlist_LayoutExample::content.phtml" />
+            <block class="Playlist\LayoutExample\Block\Layout\Index" name="custom_block" template="Playlist_LayoutExample::content.phtml" />
         </referenceContainer>
         </body>
 </page>
