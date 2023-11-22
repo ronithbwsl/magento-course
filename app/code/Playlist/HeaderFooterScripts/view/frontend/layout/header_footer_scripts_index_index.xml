@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="head.additional">
+            <block name="header_footer_script" template="Playlist_HeaderFooterScripts::head_additional/header_footer_scripts.phtml" class="Magento\Framework\View\Element\Template" />
+        </referenceBlock>
+        <referenceBlock name="after.body.start">
+            <block name="header_footer_script_after_body" template="Playlist_HeaderFooterScripts::after_body/header_footer_scripts.phtml" class="Magento\Framework\View\Element\Template" />
+        </referenceBlock>
+        <referenceBlock name="before.body.end">
+            <block name="header_footer_script_before_body" template="Playlist_HeaderFooterScripts::before_body/header_footer_scripts.phtml" class="Magento\Framework\View\Element\Template" />
+        </referenceBlock>
+    </body>
+</page>
