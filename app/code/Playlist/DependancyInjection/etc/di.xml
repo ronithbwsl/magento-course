@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <preference for="Playlist\DependancyInjection\Model\InjectableInterface" type="Playlist\DependancyInjection\Model\Injectable" />
+    
+    <type name="Playlist\DependancyInjection\Model\Main">
+        <arguments>
+            <argument name="heavyOperation" xsi:type="object">Playlist\DependancyInjection\Model\HeavyOperation\Proxy</argument>
+            <argument name="util" xsi:type="object">Playlist\DependancyInjection\Model\Util</argument>
+            <argument name="data" xsi:type="array">
+                <item name="id" xsi:type="string">Main Class</item>
+            </argument>
+            <argument name="defaultName" xsi:type="object">UpperCaseName</argument>
+            <argument name="optional" xsi:type="object">Playlist\DependancyInjection\Model\Optional</argument>
+        </arguments>
+    </type>
+    
+    <preference for="Playlist\DependancyInjection\Model\NonInjectableInterface" type="Playlist\DependancyInjection\Model\NonInjectable" />
+    <preference for="Playlist\DependancyInjection\Model\AbstractUtil" type="Playlist\DependancyInjection\Model\Util" />
+
+    <virtualType name="UpperCaseName" type="Playlist\DependancyInjection\Model\VirtualType\DefaultName" >
+        <arguments>
+            <argument name="name" xsi:type="object">Playlist\DependancyInjection\Model\VirtualType\UpperCaseName</argument>
+        </arguments>
+    </virtualType>
+
+    
+</config>
