@@ -14,7 +14,6 @@ use Magento\Framework\DataObject;
 
 class Main
 {
-    private $optional;
     public function __construct(
         private InjectableInterface $injectable,
         private NonInjectableInterfaceFactory $nonInjectable,
@@ -22,7 +21,7 @@ class Main
         private HeavyOperation $heavyOperation,
         private DefaultName $defaultName,
         private MethodInjection $methodInjection,
-        Optional $optional = null,
+        private ?Optional $optional = null,
         private array $data = []
     ) {
         $this->optional = $optional;
